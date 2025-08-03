@@ -8,6 +8,7 @@ on:
                     - info
                     - warn
                     - error
+                description: Choice # これを書かないとエディタ上でエラー
 jobs:
     run:
         runs-on: ubuntu-latest
