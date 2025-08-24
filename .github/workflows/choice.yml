@@ -1,0 +1,17 @@
+name: Choice
+on:
+    workflow_dispatch:
+        inputs:
+            log-level:
+                type: choice
+                options:
+                    - info
+                    - warn
+                    - error
+                description: Choice # これを書かないとエディタ上でエラー
+jobs:
+    run:
+        runs-on: ubuntu-latest
+        steps:
+            - run: echo "${{ inputs.log-level }}"
+            
