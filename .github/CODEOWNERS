@@ -1,0 +1,8 @@
+# リポジトリ全体のコードオーナーを設定する（マッチする設定がない場合のフォールバック先）
+* @mk23mk
+
+# 特定のファイル種別のみコードオーナーをTeamに設定する
+*.txt @mk23mk-Organization/mk23mk-Team01
+
+# 特定ディレクトリ配下のコードオーナーを、複数アカウントへ設定する
+.github/workflows/ @mk23mk @mk23mk-Organization/mk23mk-Team01
