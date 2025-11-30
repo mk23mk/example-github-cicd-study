@@ -4,5 +4,5 @@ jobs:
     hello:
         runs-on: ubuntu-latest
         steps:
-            - run: echo "Helle, world2!"
+            - run: echo "Helle, world3!"
             - uses: actions/checkout@v5
