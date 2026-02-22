@@ -7,4 +7,5 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - run: sleep 120
-        timeout-minutes: ${{ fromJSON(env.TIMEOUT) }} # string型をnumber型へ変換
+        #timeout-minutes: ${{ fromJSON(env.TIMEOUT) }} # string型をnumber型へ変換
+        timeout-minutes: ${{ env.TIMEOUT }} # string型をnumber型へ変換しない
