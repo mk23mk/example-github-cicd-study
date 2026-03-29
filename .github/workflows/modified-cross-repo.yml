@@ -1,7 +1,8 @@
 name: Modified cross repo
 on: push
 env:
-  TARGET_REPO: another-repo
+  #TARGET_REPO: another-repo
+  TARGET_REPO: example-github-cicd-mk
 jobs:
   checkout:
     runs-on: ubuntu-latest
